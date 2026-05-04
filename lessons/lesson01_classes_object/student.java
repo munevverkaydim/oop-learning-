@@ -1,6 +1,6 @@
 package lessons.lesson01_classes_object;
 
-public class Student {
+public class Student{
     // ozellikler (Fields)
     String name;
     String department;
