@@ -24,6 +24,10 @@ public class Variables {
         char deneme = 3;  //eğer char değişkenineint ataması yapılırsa ASCII değerini alır.
         System.out.println(l); //bir karakter yazabilirsin sadece.
         System.out.println(deneme);
+
+        String metin = "Hello World!";
+        System.out.println(metin);
+        
     }
 
 }
