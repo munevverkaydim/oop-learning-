@@ -1,4 +1,4 @@
-package lessons.lesson02_encapsulation;
+package LessonsWithAI.lesson02_encapsulation;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package lessons.lesson02_encapsulation;
+package LessonsWithAI.lesson02_encapsulation;
 
 public class Student {
     // 1. Değişkenleri private yaparak dışarıdan direkt erişimi kapattık
@@ -27,3 +27,10 @@ public class Student {
         return gpa;
     }
 } 
+/*Neden Encapsulation Kullanırız?:
+Veri Gizleme (Data Hiding): Sınıfın içindeki değişkenlerin (örneğin gpa veya password) dışarıdan doğrudan değiştirilmesini engelleriz.
+
+Kontrol ve Geçerlilik: Veri atanırken belirli kurallar koyabiliriz (Örneğin: "Not ortalaması 0'dan küçük, 4'ten büyük olamaz").
+
+Esneklik ve Bakım: Sınıfın içindeki bir mantığı değiştirdiğinde, o sınıfı kullanan diğer kodları bozmamış olursun.*/
+

@@ -1,6 +1,6 @@
-package lessons.lesson01_classes_object;
+package LessonsWithAI.lesson01_classes_object;
 
-public class Student{
+public class Student{ //main method u olmadan sınıf kendi kendine çalıştırılamıyor henüz
     // ozellikler (Fields)
     String name;
     String department;
