@@ -2,7 +2,7 @@ package LessonsWithYT;
 
 import java.util.Scanner;
 
-public class SwitchCase {
+public class Lesson07_SwitchCase {
     public static void main(String[] args){
         /* switch (değişken)
         {

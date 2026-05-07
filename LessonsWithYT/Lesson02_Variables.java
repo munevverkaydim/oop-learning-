@@ -1,6 +1,6 @@
 package LessonsWithYT;
 
-public class Variables {
+public class Lesson02_Variables {
 
     public static void main(String[] arg){
 

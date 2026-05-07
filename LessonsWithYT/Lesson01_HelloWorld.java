@@ -1,6 +1,6 @@
 package LessonsWithYT;  
 
-public class HelloWorld { //dosya ile aynı adda olmak zorunda
+public class Lesson01_HelloWorld { //dosya ile aynı adda olmak zorunda
     public static void main(String[] args){
         System.out.println("Helloo World!");
 }

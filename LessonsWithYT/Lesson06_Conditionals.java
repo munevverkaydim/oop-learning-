@@ -2,7 +2,7 @@ package LessonsWithYT;
 
 import java.util.Scanner;
 
-public class Conditionals {
+public class Lesson06_Conditionals {
     public static void main(String[] args){
         int x;
         Scanner scanner = new Scanner(System.in);

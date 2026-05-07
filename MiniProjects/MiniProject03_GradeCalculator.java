@@ -1,8 +1,8 @@
-package projects;
+package MiniProjects;
 
 import java.util.Scanner;
 
-public class GradeCalculator {
+public class MiniProject03_GradeCalculator {
     public static void main(String[] args){
 
         /* karne not uygulaması

@@ -1,6 +1,6 @@
 package LessonsWithYT;
 
-public class BooleanLogicBasics {
+public class Lesson05_BooleanLogicBasics {
     public static void main(String[] args){
         
         //  > , < , <= , >=  

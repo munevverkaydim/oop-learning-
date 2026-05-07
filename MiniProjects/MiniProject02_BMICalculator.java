@@ -1,8 +1,8 @@
-package projects;
+package MiniProjects;
 
 import java.util.Scanner;
 
-public class BMICalculator {
+public class MiniProject02_BMICalculator {
     public static void main(String[] args){
         //BMI (beden kitle indeksi) = ağırlık / (boy * boy)
         //ağırlık: kg cinsi

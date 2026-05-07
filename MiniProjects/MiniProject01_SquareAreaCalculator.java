@@ -1,8 +1,8 @@
-package projects;
+package MiniProjects;
 
 import java.util.Scanner;
 
-public class SquareAreaCalculator {
+public class MiniProject01_SquareAreaCalculator {
     public static void main(String[] args) {
 
         //Math kütüphanesi kullanım orneği

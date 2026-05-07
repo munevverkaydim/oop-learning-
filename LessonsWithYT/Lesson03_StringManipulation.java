@@ -1,6 +1,6 @@
 package LessonsWithYT;
 
-public class StringManipulation{
+public class Lesson03_StringManipulation{
      public static void main(String[] args){
         String metin = "Hello Java!";
         metin = metin.toUpperCase(); // metinin içindeki karakterlerin hepsini büyüttü.

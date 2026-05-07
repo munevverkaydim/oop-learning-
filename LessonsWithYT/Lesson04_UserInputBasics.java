@@ -2,7 +2,7 @@ package LessonsWithYT;
 
 import java.util.Scanner;
 
-public class UserInputBasics{
+public class Lesson04_UserInputBasics{
      public static void main(String[] args){
         Scanner scanner =new Scanner(System.in); // scanner objesi oluşturduk. başka bir isimle de oluşturabilirdik.
         String isim = scanner.nextLine();
