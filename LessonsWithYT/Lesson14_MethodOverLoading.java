@@ -22,3 +22,10 @@ public class Lesson14_MethodOverLoading {
         showYourMessage(9, "Java");
     }
 }
+
+//arguments: Fonksiyonu çağırırken içine gönderdiğin gerçek değerler (Örn: 3, "Java").
+//parameter: Fonksiyonu tanımlarken parantez içine yazdığın değişkenler (Örn: int sayi1).
+//method signiture: Metodun Adı ve Parametrelerin Listesi (Parametrelerin sayısı, tipi ve sırası)
+
+//Diyelim ki şöyle bir metodumuz var: public static int topla(int a, int b)
+// -->Bu metodun imzası şudur: topla(int, int)
