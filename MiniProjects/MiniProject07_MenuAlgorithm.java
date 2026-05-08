@@ -12,23 +12,37 @@ public class MiniProject07_MenuAlgorithm {
         //4-EXIT
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("please choose your meal number:\n1-mixed pizza\n2-vegatables pizza\n3-mushrooms pizza\n4-EXIT");
-        int choose = scanner.nextInt();
+        int choice; // döngü içinde tanımlasaydık while için koşul olarak choice kullanamazdık.
 
-        if(choose > 0 && choose <= 4){
-            if(choose == 1){
-                System.out.println("your choose is mixed pizza");
-            }else if(choose == 2){
-                System.out.println("your choose is vegetables pizza");
-            }else if(choose == 3){
-                System.out.println("your choose is mushrooms pizza");
-            }else if(choose == 4){
-                System.out.println("you will EXIT");
-            }else{
-                System.out.println("please enter a digit betwen 1 - 4");
+        do{
+            System.out.println("\n--- PIZZA MENU ---");  //tek satırdansa ayrı ayrı yazarak okunabilirlği arttırdık.
+            System.out.println("1- Mixed Pizza");
+            System.out.println("2- Vegetables Pizza");
+            System.out.println("3- Mushrooms Pizza");
+            System.out.println("4- EXIT");
+            System.out.print("Please choose your meal number: ");
+
+            choice = scanner.nextInt();
+
+            switch(choice){
+                case 1:
+                    System.out.println("\nyour choice is mixed pizza");
+                    break;
+                case 2:
+                    System.out.println("\nyour choice is vegetables pizza");
+                    break;
+                case 3:
+                    System.out.println("\nyour choice is mushrooms pizza ");
+                    break;
+                case 4:
+                    System.out.println("\nEXITing the program");
+                    break;
+                default:
+                    System.out.println("\ninvalid value! Please enter a number between 1 and 4\n");
             }
-        }
 
+        }while(choice != 4);   // do while döngüsünde yazınca kullanıcı 4 girene kadar sistem çalışmaya devam edecek.
+            
 
     }
 }
