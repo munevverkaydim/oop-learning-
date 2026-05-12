@@ -1,8 +1,7 @@
-package lessons.p06_encapsulation;
+package lessons.p07_encapsulation;
 
 public class Hause {
-    //Bir sınıf bir taslaktır (ev planı gibi)
-    //Constructor, o evi inşa ederken eline tuğlayı, çimentoyu aldığın ve evin rengine, oda sayısına karar verdiğin o "yapım aşaması"dır.
+
     private String colour;
     private int howManyRooms;
     private boolean hasGarage; 

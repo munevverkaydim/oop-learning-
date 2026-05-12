@@ -1,4 +1,4 @@
-package lessons.p06_encapsulation;
+package lessons.p07_encapsulation;
 
 public class Application {
     public static void main(String[] args) {
