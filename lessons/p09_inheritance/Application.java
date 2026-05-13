@@ -7,10 +7,10 @@ package lessons.p09_inheritance;
             System.out.println(car1.getColour() + " " + car1.getBrand() + " " + car1.getMaxSPEED() + " " + car1.getHeight());
 
             Car car2 = new Car("green", 300,1);
-            System.out.println(car1.getColour() + " " + car1.getBrand() + " " + car1.getMaxSPEED() + " " + car1.getHeight());
+            System.out.println(car2.getColour() + " " + car2.getBrand() + " " + car2.getMaxSPEED() + " " + car2.getHeight());
 
             Car car3 = new Car();
-            System.out.println(car1.getColour() + " " + car1.getBrand() + " " + car1.getMaxSPEED() + " " + car1.getHeight());
+            System.out.println(car3.getColour() + " " + car3.getBrand() + " " + car3.getMaxSPEED() + " " + car3.getHeight());
             car3.makeSound();
 
 
@@ -30,6 +30,15 @@ package lessons.p09_inheritance;
             
             /* asagıdakı gibi bir araba tanımlamak istiyorsak bu şekilde 6 parametreli bir constructor tanımlaman lazım 
             GasCar gasCar3 = new GasCar("Red", "Ferrari", 320, 1, 50, true);  */
+         
             
+
+                //REFERENCES: 
+                //Obje: Car fabrikamdan çıkan bir arabadır (car1). 
+                //Referans (car1): Elindeki bir kağıtta yazan o arabanın hafızadaki adresidir.
+
+                car3 = car1; //bunu yazdıkatan sonra car1 değeri artık car3 ün gösterdiği değeri gösterir.
+                System.out.println(car3.getColour() + " " + car3.getBrand() + " " + car3.getMaxSPEED() + " " + car3.getHeight());
+                //çıktıda car1 in değerleri yazdı
+            }
         }
-    }
