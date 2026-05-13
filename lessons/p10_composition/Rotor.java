@@ -6,12 +6,12 @@ package lessons.p10_composition;
     private int rpm;
 
 
-
+    //constructor
     public Rotor(int length, int rpm){
         this.length = length;
         this.rpm = rpm;
     }
-
+    
     public Rotor(){ //parantez içi boş yani kullanıcıdan değer gelmezse bu method çalışacak.
         this(10, 50);
     }

@@ -7,6 +7,9 @@ public class Store {
     public Store(int storageCapacity){
         this.storageCapacity =storageCapacity;
     }
+    public Store(){
+        this(100);
+    }
      
     //setter getter:
     public int getStorageCapacity(){

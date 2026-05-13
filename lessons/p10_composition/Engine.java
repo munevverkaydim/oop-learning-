@@ -5,6 +5,17 @@ public class Engine {
     private int horsePower;
 
 
+    //constructor:
+    public Engine(int torque, int horsePower){
+        this.torque= torque;
+        this.horsePower = horsePower;
+    }
+    public Engine(){
+        this(40, 1000 );
+    }
+
+
+    //businnes logic
     public void startEngine(){
         System.out.println("engine is starting..");
     }
@@ -30,3 +41,12 @@ public class Engine {
    }
 }
 
+//eğer hiç biir sey yazmazsak başına (private, public, protected) varasyılan "Package-Private" erişim seviyesini atanır.
+
+// PRIVATE: Sadece tanımlandığı dosya (.java) içinden erişilebilir; sınıfın "özel sırrıdır".
+
+// DEFAULT: Hiçbir şey yazılmazsa; sadece aynı klasör (paket) içindeki dosyalar erişebilir.
+
+// PROTECTED: Aynı klasördekiler + farklı klasörde olsa bile o sınıfı miras alanlar (subclass) erişebilir.
+
+// PUBLIC: Proje içindeki tüm klasörlerden ve dosyalardan sınırsızca erişilebilir.
