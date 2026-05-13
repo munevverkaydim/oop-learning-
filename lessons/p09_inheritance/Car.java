@@ -63,6 +63,12 @@ public class Car {
         this("white", brand, maxSpeed, height); // Şimdi düzeldi!       
     }
 
+
+    public void makeSound(){
+        System.out.println("Vroom Vroom! Cars are loud");
+    }
+
+
     public String getColour(){
         return colour;
     }
