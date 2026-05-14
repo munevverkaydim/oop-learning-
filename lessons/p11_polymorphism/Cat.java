@@ -3,7 +3,7 @@ package lessons.p11_polymorphism;
 public class Cat extends Animal{
     //cat class ın kendine ait paramater ı yok.
 
-    //contructor
+    //constructor
     public Cat(String name){
         super(name);
     }
@@ -11,7 +11,7 @@ public class Cat extends Animal{
     //businnes logic
     @Override
     public void makeNoise(){
-        System.out.println("cat says meoww");
+        System.out.println("cat is aking soud meoww");
     }
 
 }
