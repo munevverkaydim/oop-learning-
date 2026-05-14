@@ -1,5 +1,17 @@
 package lessons.p11_polymorphism;
 
-public class Cat {
-    
+public class Cat extends Animal{
+    //cat class ın kendine ait paramater ı yok.
+
+    //contructor
+    public Cat(String name){
+        super(name);
+    }
+
+    //businnes logic
+    @Override
+    public void makeNoise(){
+        System.out.println("cat says meoww");
+    }
+
 }

@@ -10,7 +10,7 @@ public class Bird extends Animal{
     }
 
     //businnes logic
-    @Override
+    @Override //üst class taki metodu ghostladık. aynı method adını afrklı kez kullandık üstüne yazdık
     public void makeNoise(){
         System.out.println("bird is making sound. cik cik");
     }
