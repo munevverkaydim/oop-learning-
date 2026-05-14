@@ -11,7 +11,7 @@ public class Cat extends Animal{
     //businnes logic
     @Override
     public void makeNoise(){
-        System.out.println("cat is aking soud meoww");
+        System.out.println(getName() + " says meoww");
     }
 
 }

@@ -1,8 +1,16 @@
 package lessons.p11_polymorphism;
 
 public class Application {
+
+    //POLYMORPHİSM:bir nesnenin birden fazla obje gibi davranabilmesi.
+        //burda hayvan kapsar kedi, köpek kuş.
+        public static void makeAnimalTalk(Animal A){ //buranın içine cat, dog, bird ve animal(genel sınıf da dahil) yollayabilirsin
+            A.makeNoise();
+        } // BU METHOD MAİN İN DIŞIDA OLMALII   
+
     public static void main(String[] args) {
 
+        
         Animal animal1 = new Animal();
         System.out.println(animal1.getName());
 
@@ -22,5 +30,12 @@ public class Application {
         cat1.makeNoise();
         dog1.makeNoise();
         bird1.makeNoise();
+
+        makeAnimalTalk(animal1);
+        makeAnimalTalk(animal2);
+        makeAnimalTalk(cat1);
+        makeAnimalTalk(dog1);
+        makeAnimalTalk(bird1);
+
     }
 }

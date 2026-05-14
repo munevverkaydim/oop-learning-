@@ -12,7 +12,7 @@ public class Dog extends Animal {
     //businnes logic
     @Override
     public void makeNoise(){
-        System.out.println("Dog is making sound hav hav");
-    }
+        System.out.println(super.getName() + " says hav hav"); //burda super kullanmadan da getName() yaxsbilirdik. 
+    }//çünkü üst sınıfta tanımlı her şey burda da tanımlı
     
 }
