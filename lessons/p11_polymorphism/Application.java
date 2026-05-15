@@ -1,5 +1,7 @@
 package lessons.p11_polymorphism;
 
+import javax.naming.BinaryRefAddr;
+
 public class Application {
 
     //POLYMORPHİSM:bir nesnenin birden fazla obje gibi davranabilmesi.
@@ -7,6 +9,28 @@ public class Application {
         public static void makeAnimalTalk(Animal A){ //buranın içine cat, dog, bird ve animal(genel sınıf da dahil) yollayabilirsin
             A.makeNoise();
         } // BU METHOD MAİN İN DIŞIDA OLMALII   
+
+
+        //polymorphism olmasaydı ne olurdu:
+
+        //statik methodları önemi: nesneyi oluşturmadan direkt çağırabiliyoruz. class a bağlı. class içinde çağrılabilir.
+        //başka sınıftan çağırıyorsak da (public yapıysak) hangi class da ise oClassınAdı.methodAdı() şeklinde kullanılabilir
+        public static void makeAnimalTalk2(Object object){ //Object en üst türdür. bütün nesneler bu sınıftan türer.(java ya özel)
+            if (object instanceof Cat){
+                Cat cat = (Cat) object;// CASTING Zorla Dönüştürme
+                cat.makeNoise();
+            }else if(object instanceof Dog){
+                Dog dog = (Dog) object;// CASTING Zorla Dönüştürme
+                dog.makeNoise();
+            }else if(object instanceof Bird){
+                Bird bird = (Bird) object;// CASTING Zorla Dönüştürme
+                bird.makeNoise();
+            }else if(object instanceof Animal){
+                Animal animal = (Animal) object;// CASTING Zorla Dönüştürme
+                animal.makeNoise();
+            }// instanceof: Bir nesnenin belirli bir sınıfa ait olup olmadığını kontrol eden güvenlik kapısıdır (true/false döner).
+        }
+
 
     public static void main(String[] args) {
 
