@@ -23,6 +23,10 @@ public class Square extends Shape {
         return perimeter;
     }
 
+    public boolean isPerfectSquare(){
+        return true;
+    }
+
     //getter setter
     public void setSide(double side){
         this.side = side;

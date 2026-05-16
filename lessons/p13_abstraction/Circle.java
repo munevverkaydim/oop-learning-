@@ -21,6 +21,10 @@ public class Circle extends Shape {
         double perimeter = 2 * Math.PI * this.radius;
         return perimeter;
     }
+    public double calculateDiameter(){
+        double diameter = 2 * radius;
+        return diameter; 
+    }
     
     //GETTER SETTER
     public void setRadius(double radius){

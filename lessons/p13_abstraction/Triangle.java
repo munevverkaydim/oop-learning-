@@ -29,6 +29,10 @@ public class Triangle extends Shape{
         return perimeter;
     }
 
+    public int getLargestAngle(){
+        return 179;
+    }
+
     //getter setter
     public void setBase(double base){
         this.base = base;
