@@ -3,11 +3,14 @@ package lessons.p12_interfaces;
 public abstract class Animal {
     private String name;
 
+
+    //CONSTRUCTOR
     public Animal(String name) {
         this.name = name;
     }
 
-    public String getName() {
+    //SETTER 
+    public String getName() { //getter tanımlamadık çünkü isim bir kez obje oluşurken verilmesini sonradan değişmemesini istedik
         return name;
     }
 
@@ -22,4 +25,4 @@ public abstract class Animal {
 }
 
 //abstract sınıf kullanarak hem kod tekrarını önlüyoruz (name ve breathe bir kez yazıldı)
-//hem de alt sınıflara "ses çıkarmayı unutma!" diye zorunluluk getiriyoruz.
+//hem de alt sınıflara "ses çıkarmayı unutma!" diye zorunluluk getiriyoruz. 
