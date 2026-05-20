@@ -14,6 +14,8 @@ public class TryCatchFinallyDemo {
 
             int z = x / y;
 
+            System.out.println(car.getBrand());
+
             /* * TRY BLOĞU:
          * Hata çıkarma riski olan, "tehlikeli" kod satırlarını buraya yazarız.
          * Java bu bloğun içindeki kodları çalıştırmayı DENER.
@@ -55,3 +57,7 @@ public class TryCatchFinallyDemo {
     }
     
 }
+
+// try-catch mekanizması, try içinde İLK hatayı gördüğü anda ilgili catch bloğuna sıçrar.
+// Hatanın fırlatıldığı satırdan sonraki try kodlarına GERİ DÖNMEZ.
+// Önce catch bloğunu, ardından HER HALÜKARDA finally bloğunu çalıştırıp mekanizmadan çıkar ve normal akışa devam eder.
