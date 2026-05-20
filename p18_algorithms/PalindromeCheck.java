@@ -1,4 +1,4 @@
-package p17_algorithms;
+package p18_algorithms;
 
 public class PalindromeCheck {
 
