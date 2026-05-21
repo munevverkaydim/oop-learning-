@@ -1,6 +1,8 @@
 package p19_gui_swing;
 
+import java.awt.Color;
 import java.awt.FlowLayout;               // FlowLayout 
+import java.awt.Font;
 import java.awt.event.ActionEvent;        // ActionEvent 
 import java.awt.event.ActionListener;     // addActionListener 
 import javax.swing.JButton;
@@ -29,6 +31,19 @@ public class StyleAndDesignIntro {
         JTextField text1 = new JTextField(10); // we take text1 from user
         JButton button1 = new JButton("send it");
 
+        button1.setBackground(Color.CYAN); //changes the button's background
+        button1.setForeground(Color.DARK_GRAY); //changes the text color inside the button
+        button1.setFont(new Font("Arial",Font.BOLD, 15));
+        // CUSTOM FONT (Anonymous Object): Sets the text style of the button.
+        // 1st Param ("aa"): Font family name. (If Java can't find "aa", it falls back to the default system font).
+        // 2nd Param (Font.BOLD): Makes the button text thick/bold.
+        // 3rd Param (15): Sets the text size to 15 pixels/points.
+
+
+        Color newColor = new Color(200,100,150);
+        //we create a new color( you can copy from google)
+        jf.getContentPane().setBackground(newColor); //we made our background that color
+         
         jf.getContentPane().add(label);
         jf.getContentPane().add(text1);
         jf.getContentPane().add(button1);
@@ -43,6 +58,7 @@ public class StyleAndDesignIntro {
                 
                 // 3. The actual task: Read input text, combine it, and change the label dynamically.
                 label.setText(text1.getText() + " is a great colour!");
+                label.setFont(new Font("Arial", Font.BOLD, 20));
             }
         });
 
@@ -52,3 +68,7 @@ public class StyleAndDesignIntro {
 
     }
 }
+
+// RGB stands for Red, Green, Blue.
+// Each color value goes from 0 (darkest/none) to 255 (brightest/full).
+// new Color(R, G, B) mixes these three lights to create a unique color.
