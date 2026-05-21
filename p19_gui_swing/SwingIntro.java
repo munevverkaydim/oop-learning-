@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.lang.classfile.Label;
 
 import javax.swing.JButton;
-import javax.swing.JFrame;
+import javax.swing.JFrame;  
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
