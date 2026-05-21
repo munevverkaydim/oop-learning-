@@ -8,6 +8,7 @@ import java.lang.classfile.Label;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 public class SwingIntro {
@@ -43,6 +44,8 @@ public class SwingIntro {
         jf.getContentPane().add(button1); // Adds the button to the screen.
 
 
+
+
         // We add a click event listener to the button (Action Listener).
         button1.addActionListener(new ActionListener() { //actionListener is NOT A CLASS.it is an INTERFACE.
             @Override //because of that we override it.
@@ -51,6 +54,41 @@ public class SwingIntro {
                 // text1.getText() reads the text typed by the user inside the input box.
                 // label1.setText() changes the screen text dynamically.
                 label1.setText("Hello " + text1.getText() + ", welcome to our program.");
+            }
+        });
+
+
+
+        // Create a new button for pop-up messages.
+        JButton button2 = new JButton("click here");// Normally we should create this above, but we write it here for learning purposes. 
+        jf.getContentPane().add(button2);
+        
+        button2.addActionListener(new ActionListener() { 
+            @Override 
+            public void actionPerformed(ActionEvent e) {
+                // JOptionPane has static methods. We don't need to create an object with 'new'.
+                // JOptionPane.showMessageDialog() is a STATIC method.
+                // This means the method belongs to the Class itself, not to a specific object.
+                // So, we don't need 'new' keyword to open a quick dialog box. Like Math.sqrt()!
+
+                // The first parameter 'jf' (or null) represents the parent window.
+                // If we pass 'jf', the pop-up opens right in the center of our main window. 
+                // If we pass 'null', the pop-up opens in the center of the computer screen.
+                JOptionPane.showMessageDialog(jf, "welcome to our Pane...");                
+            }
+        });
+
+
+
+        //if we want to take variables from user:
+        JButton button3 = new JButton("enter");
+        jf.getContentPane().add(button3);
+        button3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e){
+                
+                String namee = JOptionPane.showInputDialog("enter your namee:");
+                JOptionPane.showMessageDialog(null, "welcome " + namee);
             }
         });
 
@@ -65,4 +103,22 @@ public class SwingIntro {
         jf.setVisible(true);//if we make it true, user can see our frame,
         //if it s false, user can t see the frame that we made.
     }
+
+
+        // JOptionPane is a ready-made pop-up (dialog) window class.
+        // We use it for 3 main reasons in real projects:
+        
+        // 1. SHOW MESSAGE (Information/Warning/Error): 
+        //    Example: JOptionPane.showMessageDialog() firlats a quick notification like "File Saved Successfully!"
+        
+        // 2. CONFIRMATION (Yes/No/Cancel): 
+        //    Example: JOptionPane.showConfirmDialog() asks "Are you sure you want to delete this file?"
+        
+        // 3. INPUT (Quick Text Input): 
+        //    Example: JOptionPane.showInputDialog() prompts a quick box: "Please enter your age:"
+        
+        // DIFFERENCE BETWEEN JFRAME AND JOPTIONPANE
+        // JFRAME: It is a permanent main window. We must design it from scratch (size, buttons, layout).
+        // JOPTIONPANE: It is a temporary pop-up. It uses ready templates from the OS. 
+        // It disappears completely when the user clicks 'OK' or 'Cancel'.
 }
