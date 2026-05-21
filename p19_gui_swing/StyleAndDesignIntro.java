@@ -1,10 +1,15 @@
 package p19_gui_swing;
 
+import java.awt.Button;
 import java.awt.Color;
 import java.awt.FlowLayout;               // FlowLayout 
 import java.awt.Font;
 import java.awt.event.ActionEvent;        // ActionEvent 
 import java.awt.event.ActionListener;     // addActionListener 
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -39,6 +44,8 @@ public class StyleAndDesignIntro {
         // 2nd Param (Font.BOLD): Makes the button text thick/bold.
         // 3rd Param (15): Sets the text size to 15 pixels/points.
 
+        Color firstColor = button1.getBackground(); //we saved the original color as firstColor so we can remember it later
+
 
         Color newColor = new Color(200,100,150);
         //we create a new color( you can copy from google)
@@ -61,6 +68,23 @@ public class StyleAndDesignIntro {
                 label.setFont(new Font("Arial", Font.BOLD, 20));
             }
         });
+
+
+        //mouse hover events
+        button1.addMouseListener(new MouseAdapter() {
+            
+            @Override
+            public void mouseEntered(MouseEvent e){ //this method will run authomatichly when mouse enter the buttons area
+                button1.setBackground(Color.ORANGE);
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e){//this method will run authomatichly when mouse exit the buttons area
+                button1.setBackground(firstColor);  // Restore the original color (CYAN)
+            }
+        });
+
+
 
         jf.setVisible(true);
         jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
