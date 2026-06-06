@@ -40,7 +40,8 @@ public class TryCatchFinallyDemo {
             System.out.println("there is finally part...");
             /* * FINALLY BLOĞU:
          * Hata çıksa da, çıkmasa da, hangi catch bloğuna girilirse girilsin
-         * HER HALÜKARDA (mutlaka) çalışacak olan koddur.
+         * HER HALÜKARDA çalışacak olan koddur.
+         * 
          * * ÖNEMLİ SINAV/MÜHENDİSLİK NOTU (Dosya Okuma Senaryosu):
          * Eğer burada bir dosyadan veri okuyor olsaydık (örneğin bir BufferedReader veya FileReader ile),
          * try bloğu içinde dosya açıldıktan sonra bir hata oluşursa dosya bellekte açık kalabilirdi.
