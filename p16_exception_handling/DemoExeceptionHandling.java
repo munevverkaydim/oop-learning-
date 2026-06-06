@@ -27,7 +27,7 @@ public class DemoExeceptionHandling {
                     //RuntimeException -> this have a lot of classes
                         //ArithmeticException
 
-        int i, j, k, h;
+        int i, j, k;
 
         i = 8;
         j = 2;
@@ -36,10 +36,12 @@ public class DemoExeceptionHandling {
 
         try{
 
-            k = i/j; //this is a chritical statement so, we have to write inside try
-            System.out.println(k);
+            System.out.println("enter a number: ");
+            j = Integer.parseInt(br.readLine());
 
-            h = Integer.parseInt(br.readLine());
+            k = i/j; //this is a chritical statement so, we have to write inside try
+
+            System.out.println("output is: " + k);
 
             for(int c=0 ; c<4 ; c++){
                 a[c] = c+1;
@@ -61,5 +63,21 @@ public class DemoExeceptionHandling {
         }catch(Exception e){
             System.out.println("Unknown Exception");  //after that we write possible exception, we write the general exception catch
         }//This should be the LAST one
+
+        finally{
+            // CRITICAL: br.close() throws a checked IOException.
+            // Java forces us to wrap it inside a try-catch block even inside finally.
+            
+            try {
+                if (br != null) { // if br was not created we can t close something doesn t exist!!
+                    br.close(); 
+                    System.out.println("BufferedReader closed successfully.");
+                }
+            } catch (IOException e) {
+                System.out.println("Error while closing the resource: " + e);
+            } 
+
+
+        }
     }
 }
